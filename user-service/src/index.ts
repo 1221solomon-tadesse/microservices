@@ -13,7 +13,7 @@ app.use("/users", userRoutes);
 
 AppDataSource.initialize()
   .then(() => {
-    console.log("📦 Database connected");
-    app.listen(port, () => console.log(`🚀 Server running on port ${port}`));
+    console.log(" Databas connected");
+    app.listen(port, () => console.log(` Server running on port ${port}`));
   })
-  .catch((error) => console.error("❌ DB connection error:", error));
+  .catch((error) => console.error(" DB connection error:", error));
